@@ -1,0 +1,970 @@
+/*
+Theme Name: Interpoint
+Description: Tema desenvolvido para o site Interpoint Viagens e Turismo
+Author: Jefferson Lima
+Author URI: https://github.com/jeffersoncarrenho
+Version: 3.0
+*/
+
+body, html { overflow-x:hidden; }
+body {
+    background-color: #F0F0F0;
+    font-family: 'Lato', sans-serif;
+    color:#4c4c4c;
+  	font-weight: 300;
+  	font-style: normal;
+  	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  	-webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'American Typewriter Regular';
+  src: url('../fonts/American Typewriter Regular.ttf');
+}
+
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+/*Helpers*/
+.no-padding{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.navbar-interp,
+.navbar-default{
+  background: transparent;
+}
+
+.top-menu{
+  background: #eee;
+  min-height: 40px;
+}
+
+.top-menu,
+.top-menu a{
+  color: #777;
+}
+
+.navbar-toggle .icon-bar {
+    border-radius: 3px !important;
+    display: block;
+    height: 5px;
+    width: 5px;
+}
+
+.navbar-toggle {
+    border: 0 none;
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    margin-top: 8px;
+    padding: 9px 10px;
+    position: relative;
+}
+
+.subheader,
+.subheader a{
+    font-weight: 600;
+    color: #777;
+    padding: 0.8em 0.2em;
+    font-size: 0.9em;
+}
+.subheader #phone{
+  font-size: 1em;
+  padding: 0 1.1em;
+}
+
+.subheader #phone a{
+  font-size: 1em;
+  border-left: solid 1px #777;
+  padding: 0 1.1em;
+}
+
+.subheader #phone .fa-phone + a{
+  border: 0;
+}
+
+
+.subheader #redes-sociais-header{
+  font-size: 0.9em;
+}
+
+
+#redes-sociais-header a.facebook:hover{
+  color: #3B5998;
+}
+#redes-sociais-header a.twitter:hover{
+  color: #328FFF;
+}
+
+#redes-sociais-header a.google-plus:hover{
+  color: #DD4C40;
+}
+
+#redes-sociais-header a.youtube:hover{
+  color: #E62117;
+}
+
+#redes-sociais-header a.pinterest:hover{
+  color: #BD081C;
+}
+
+#redes-sociais-header a.instagram:hover{
+  color: #003876;
+}
+.navbar{
+  border:0;
+}
+.navbar-header1{
+  float: inherit;
+}
+
+.navbar-brand img{
+  width: 200px;
+}
+
+.navbar-nav > li > a {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.navbar{
+  z-index: 2;
+}
+
+.navbar-nav.navbar-center {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  width: auto;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+    padding: 25px 15px 15px;
+}
+
+.navbar-interp .navbar-nav > li > a {
+    color: #777;
+    padding: 25px 20px 15px;
+}
+
+.search-field{
+  background: transparent;
+}
+.search{
+  position: relative;
+  padding: 0;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+.search .btn{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #a70e13;
+  padding: 7px 17px;
+  text-transform: uppercase;
+}
+
+.search .form-control {
+    background-color: #e6e7e9;
+    border-radius: 0;
+    display: block;
+    font-size: 1.5em;
+    height: 45px;
+    line-height: 1.42857;
+    padding: 0;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mobile-search{
+  color: #777;
+  cursor: pointer;
+  font-size: 1.7em;
+  left: 25px;
+  position: absolute;
+  top: 10px;
+}
+
+
+#myCarousel{
+  top:-65px;
+}
+
+#myCarousel .img-responsive{
+  width: 100%;
+}
+
+.carousel-caption h3 {
+  text-transform: uppercase;
+}
+.carousel-caption p{
+  font-size: 2.5em;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption2{
+  text-align: center;
+  color: #777;
+}
+
+.carousel-caption2 h3 {
+  text-transform: uppercase;
+}
+.carousel-caption2 p{
+  font-size: 1.5em;
+}
+
+.destaques-home{
+  position: relative;
+  top:-65px;
+}
+
+.destaques-home div{
+  margin:0;
+  padding:5px;
+}
+
+.destaques-home div:hover{
+  -webkit-filter:grayscale(100%);
+  -webkit-transition:all 0.5s linear;
+  text-shadow: 5px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.destaques-home img{
+  padding: 0;
+  margin: 0;
+  -webkit-filter:grayscale(0%);
+}
+
+.destaques-home span{
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 1);
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.row > h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.swiper-slide{
+  background: #fff;
+  height: 370px;
+  margin-bottom: 50px;
+}
+
+.row-swiper .btn{
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 30px;
+  background: #a70e13;
+}
+
+.swiper-slide .btn:hover{
+  background: #c90005;
+}
+
+.swiper-slide p,
+.swiper-slide h3{
+  padding: 5px 10px;
+}
+
+.swiper-slide h3{
+  font-size: 1.2em;
+}
+
+.link-promocoes{
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link-promocoes a{
+  color: #b1432a;
+}
+
+.contato-home{
+   background:#fdddce;
+}
+.contato-home h2{
+  font-family: 'American Typewriter Regular';
+}
+
+.contato-home a{
+  color: #555;
+}
+
+.contato-home a:hover{
+  color: #999;
+  text-decoration: none;
+}
+
+
+.contato-home .col-sm-6,
+.contato-home .col-sm-12{
+  margin: 25px 0 0;
+  padding: 0;
+}
+.contato-home p{
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.roteiros-home .row{
+  /*margin: 50px 0;*/
+}
+
+.roteiros-home .thumb{
+  margin: 15px 0;
+}
+.roteiros-home .row div{
+  color: #fff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.roteiros-home .thumb a {
+    color: #fff!important;
+}
+
+span.legenda{
+  position: absolute;
+  /*color: #fff;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.roteiros-home .row div:hover{
+  text-shadow: 5px 3px 3px rgba(0, 0, 0, 1);
+  -webkit-filter:grayscale(100%);
+  -webkit-transition:all 0.5s linear;
+}
+span.legenda h3{
+  text-transform: uppercase;
+}
+
+span.legenda {
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.descubra-img img{
+  width:100%;
+}
+
+.descubra-img{
+  position: relative;
+}
+
+.descubra-img span{
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'American Typewriter Regular';
+  font-size: 2.5em;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.form .row h2{
+  text-align: center;
+  color: #777;
+  background-image: linear-gradient(to right,  transparent, #777, transparent, transparent, transparent, transparent, transparent, transparent, #777, transparent);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.form .row h3{
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.form{
+  background: #E6E6E4;
+  padding-bottom: 5em;
+  border-top: solid 2px #ccc;
+}
+
+/**Footer**/
+.interpoint-footer {
+	border-top: 2px solid #cccccc;
+	background: #808080;
+  font-size: 1em;
+
+}
+
+.footer_container {
+    background: #555 none repeat scroll 0 0;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 10px 0;
+}
+
+#redes-sociais-footer{
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#redes-sociais-footer a{
+  color: #fff;
+  background: #555;
+  padding: 2ch 1.3ch 1ch;
+  border-radius: 50%!important;
+}
+
+#redes-sociais-footer a:hover{
+  background: #E6E6E4;
+}
+
+#redes-sociais-footer a.facebook:hover{
+  background: #3B5998;
+}
+#redes-sociais-footer a.twitter:hover{
+  background: #328FFF;
+}
+
+#redes-sociais-footer a.google-plus:hover{
+  background-image: linear-gradient(to right, #DD4C40, #D04337, #DC4B3F);
+}
+
+#redes-sociais-footer a.youtube:hover{
+  background: #E62117;
+}
+
+#redes-sociais-footer a.pinterest:hover{
+  background: #BD081C;
+}
+
+#redes-sociais-footer a.instagram:hover{
+  background-image: linear-gradient(to top right, #F1D004, #F1D004, #F95303, #F81E0A, #8447B0, #8447B0);
+}
+
+.copyright{
+  background: #E6E6E4;
+  text-align: center;
+}
+
+.copyright p{
+  margin-top: 5px;
+}
+
+.copyright a{
+  color: #333;
+  text-decoration: none;
+}
+
+.copyright a:hover{
+  color: #555;
+  text-decoration: underline;;
+}
+
+.interpoint-footer .col-md-3{
+  min-height: 170px
+}
+
+.menu-rodape{
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-rodape li{
+  list-style: none;
+  text-align: left;
+  padding: 5px 0;
+  line-height: 0.5;
+}
+
+.menu-rodape a{
+  color: #fff;
+}
+
+.address{
+  text-align: left;
+  color: #fff;
+}
+
+.footer-menu{
+  text-align: center;
+}
+
+span.tel{
+  margin-left: 16px;
+}
+
+.virtuoso-logo{
+}
+
+.virtuoso-logo img{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  max-width: 150px;
+}
+
+.form-cadastro{
+  color: #fff;
+}
+
+.form-cadastro input{
+  margin: 2px 0;
+}
+
+.form-cadastro em{
+  font-size: 1.1em;
+}
+
+/*Pages*/
+.page-content{
+ top:-65px;
+ position: relative;
+}
+
+.post-img{
+  margin-bottom: 20px;
+}
+
+
+.post-img img{
+  width: 100%;
+  -webkit-filter:brightness(80%);
+  -webkit-transition:all 0.5s linear;
+}
+
+.post-img .page-title{
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  left: 20px;
+}
+
+.post-img span{
+  text-transform: uppercase;
+}
+.post-img h1{
+  margin: 0;
+}
+
+.post-img .share{
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+  right: 15px;
+}
+
+.post-img .share i{
+  font-size: 1.8em;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.share .fa-heart{
+  color: #f00;
+}
+
+.share .fa-heart-o{
+  color: #fff;
+}
+
+.share #coracao:hover{
+  color: #f00;
+}
+
+.hoteis{
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.hotel, .promo{
+  background: #fff;
+
+}
+
+.hoteis h3{
+  margin:0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.promos{
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.promos h3.titulo-promo{
+  padding:15px 0;
+  font-size: 26px;
+  font-weight: 300;
+  color: #b1422f;
+}
+
+.promos h3.titulo-promo i{
+  float: right;
+}
+
+
+.hoteis .hotel .foto{
+  padding: 0;
+}
+.hoteis .foto img{
+  width:100%;
+}
+
+.hoteis p {
+    color: #000;
+    font-size: 15px;
+    margin:10px 0 0;
+}
+
+.hoteis .desc{
+  padding: 10px 10px 0;
+}
+
+.hoteis .desc del,
+.promos del {
+  text-decoration: line-through #F00;
+  font-size: 15px;
+}
+
+.hoteis .desc del span{
+  color: #000;
+}
+
+.hoteis .categoria{
+  color: #f00;
+  margin-right: 15px;
+}
+
+.hoteis i{
+  margin-right: 10px;
+}
+
+.hoteis .botoes,
+.promos .botoes{
+  padding: 0;
+  text-align: center;
+}
+
+
+.hoteis .botoes a,
+.promos .botoes a {
+    margin: 4px 0;
+    padding: 2px 1px;
+}
+
+.promos .botoes a {
+  font-size: 12px;
+  padding:5px;
+}
+
+.hoteis .hotel .botoes .btn-promo{
+  background: #006543;
+}
+
+.hoteis .hotel .botoes .btn-saiba,
+.hoteis .hotel .botoes .btn-tarifas{
+  background: #a70e13;
+}
+
+.promos{
+  font-size: 15px;
+}
+
+.promos .valor{
+  font-size: 20px;
+}
+
+/*Tabs*/
+
+.page-content ul > li > a{
+  font-size: 15px;
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.page-content ul{
+
+}
+
+.page-content .tab-content{
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+
+.page-content .tab-content .table-responsive{
+  font-size: 14px;
+}
+
+.nav-tabs {
+    border-bottom: solid 1px #efefef;
+}
+
+.nav-tabs > li > a:hover{
+  border-width: 0;
+  border-bottom: 4px red;
+  color:red;
+  border-color: none;
+  border-image: none;
+  border-style: solid;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #efefef;
+    border-width: 0;
+    border-bottom: 4px red;
+    border-color: none;
+    border-image: none;
+    border-style: solid;
+    color: red;
+    cursor: default;
+}
+.nav-tabs > li > a {
+    border-color: none;
+    border-image: none;
+    border-style: solid;
+    border-width: 0;
+    border-bottom: 4px #d4d4d4;
+    border-color: none;
+    border-image: none;
+    border-style: solid;
+    border-radius: 0;
+    line-height: 1.42857;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+/*End Tabs*/
+
+.page-form {
+    background: #dcdddf;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    float: right;
+}
+
+.page-form .form-title{
+  text-transform: uppercase;
+  margin:10px 0 0;
+}
+
+.page-form strong{
+  text-transform: uppercase;
+}
+
+.page-form input[type="submit"]{
+  background: #a90d18;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.page-form .form-group{
+  margin-bottom:2px;
+}
+
+.input-group .form-control{
+  z-index: 0;
+}
+
+/*TABLES*/
+
+
+
+table, td{
+  border: solid 1px #fff;
+  font-size: 1em!important;
+}
+
+th{
+  background: #808080;
+  color: #fff;
+  text-align: center;
+  border: solid 1px #fff;
+}
+
+/*TABLES*/
+
+
+@media (min-width:991px) and (max-width:1200px) {
+
+}
+
+@media (min-width:991px) {
+  .botoes{
+    text-align: right!important;
+  }
+  .hoteis .botoes{
+    margin-top: 28px;
+  }
+
+  .hoteis .botoes a{
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 6px 15px;
+  }
+
+  .promos .botoes a {
+    font-size: 14px;
+    margin: 4px 3px;
+    padding: 2px 4px;
+  }
+
+  .promos .botoes{
+    margin-top:13px;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .navbar-interp .navbar-nav > li > a {
+    color: #777;
+    font-size: 1em;
+    padding: 25px 7px 7px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .nav-tabs > li {
+      width: 100%;
+  }
+  .navbar-brand{
+    width: 170px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hoteis, .promos {
+    padding: 0 10px;
+  }
+
+  .hoteis .desc{
+    padding: 30px 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .interpoint-footer .address{
+    text-align: center;
+  }
+
+  .virtuoso-logo img {
+    bottom: 20px;
+    left: 50%;
+    max-width: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .navbar{
+    margin-bottom:65px;
+  }
+}
+
+
+
+@media (min-width:991px) and (max-width: 1200px) {
+
+}
+
+@media (min-width:683px) and ( max-width: 991px) {
+
+}
+
+@media (min-width:585px) and ( max-width: 683px) {
+
+}
+
+@media (min-width:536px) and ( max-width: 585px) {
+  .form .row h2{
+    background-image: none;
+  }
+
+}
+
+@media  (min-width:410px) and  ( max-width: 536px) {
+  .form .row h2{
+    background-image: none;
+  }
+}
+
+@media  ( max-width: 410px) {
+  .navbar{
+    margin-bottom:65px;
+  }
+
+  .destaques-home span {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .thumb .legenda h3{
+    font-size: 1em;
+  }
+  .thumb .legenda p{
+    font-size: 0.5em;
+  }
+  .descubra-img span{
+    font-size: 2.2em;
+  }
+
+  .form .row h2{
+    background-image: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .descubra-img span{
+    font-size: 1em;
+  }
+}

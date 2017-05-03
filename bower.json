@@ -1,0 +1,24 @@
+{
+  "name": "prototipo-interpoint",
+  "description": "Prototipo do novo tema do Site Interpoint Viagens e Turismo",
+  "main": "index.html",
+  "authors": [
+    "Jefferson Lima"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "assets/components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "bootstrap-datepicker": "^1.6.4",
+    "swiper": "^3.4.2"
+  }
+}
