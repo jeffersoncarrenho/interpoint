@@ -87,25 +87,25 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-center">
               <li>
-                <a href="#">Destinos</a>
+                <a href="destinos.html">Destinos</a>
               </li>
               <li>
-                <a href="#">Ski & Snowboard</a>
+                <a href="destinos.html">Ski & Snowboard</a>
               </li>
               <li>
-                <a href="#">Cruzeiros</a>
+                <a href="destinos.html">Cruzeiros</a>
               </li>
               <li>
-                <a href="#">Trens</a>
+                <a href="destinos.html">Trens</a>
               </li>
               <li>
-                <a href="#">Aluguel de Carros</a>
+                <a href="destinos.html">Aluguel de Carros</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="https://blog.interpoint.com.br" target="_blank">Blog</a>
               </li>
               <li>
-                <a href="#">Publicações</a>
+                <a href="http://graandesdestinos.com.br">Publicações</a>
               </li>
             </ul>
           </div>
@@ -169,7 +169,7 @@
 
     <div class="container">
 
-      <ul class="nav nav-tabs">
+      <ul id="myTabs" class="nav nav-tabs">
        <li class="active"><a data-toggle="tab" href="#home">Sobre o Hotel</a></li>
        <li><a data-toggle="tab" href="#menu1">Roteiros</a></li>
        <li><a data-toggle="tab" href="#menu2">Fotos e Vídeos</a></li>
@@ -875,18 +875,25 @@
 
                       <p>
                         <i class="fa fa-phone" aria-hidden="true"></i>
-                        +55 (11) 3087.9400 <br />
+                        <span class="fone-desk">+55 (11) 3087.9400</span>
+                        <span class="fone-mobile"><a href="tel:551130879400">+55 (11) 3087.9400</a></span>
+                        <br />
                         <span class="tel">
-                          +55 (11) 2626.9400 <br />
+                          <span class="fone-desk">+55 (11) 2626.9400 </span>
+                          <span class="fone-mobile"><a href="tel:551126269400">+55 (11) 2626.9400</a></span>
+                          <br />
                         </span>
                         <span class="tel">
-                          0800.771.9400 <br /><br />
+                          <span class="fone-desk">0800.771.9400 </span>
+                          <span class="fone-mobile"><a href="tel:08007719400">0800.771.9400</a></span>
+                           <br /><br />
                         </span>
 
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                         <strong>Whatsapp Emergências</strong> <br />
                         <span class="tel">
-                          +55 (11) 99658-7433
+                          <span class="fone-desk">+55 (11) 99658.7433 </span>
+                          <span class="fone-mobile"><a href="tel:996587433">+55 (11) 99658.7433</a></span>
                         </span>
                       </p>
                     </div>
@@ -943,6 +950,23 @@
       $('.input-daterange').datepicker({
           language: "pt-BR"
       });
+    </script>
+
+    <script>
+      $('#myTabs a').click(function (e) {
+          if($(this).parent('li').hasClass('active')){
+              $( $(this).attr('href') ).hide();
+          }
+          else {
+              // e.preventDefault();
+              $(this).tab('show');
+          }
+      });
+
+      var hash = document.location.hash;
+      if (hash) {
+      $('#myTabs a[href="'+hash+'"]').tab('show');
+      }
     </script>
 
 </body>

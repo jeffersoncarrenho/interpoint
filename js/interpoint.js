@@ -52,3 +52,22 @@ $('#coracao').on('click', function(){
     coracao = false;
   }
 });
+
+
+/**
+ * @function isMobile
+ * detecta se o useragent e um dispositivo mobile
+ */
+function isMobile(){
+	var userAgent = navigator.userAgent.toLowerCase();
+	if( userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i)!= -1 )
+		return true;
+}
+
+if (isMobile()) {
+  $('span.fone-desk').addClass('hidden');
+  $('span.fone-mobile').removeClass('hidden');
+}else{
+  $('span.fone-mobile').addClass('hidden');
+  $('span.fone-desk').removeClass('hidden');
+}

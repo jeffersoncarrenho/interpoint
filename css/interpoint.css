@@ -276,7 +276,7 @@ body {
 
 .swiper-slide{
   background: #fff;
-  height: 370px;
+  height: 390px;
   margin-bottom: 50px;
 }
 
@@ -519,6 +519,10 @@ span.legenda {
 
 .address{
   text-align: left;
+  color: #fff;
+}
+
+.address .fone-mobile a{
   color: #fff;
 }
 
