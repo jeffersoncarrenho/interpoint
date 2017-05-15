@@ -1,7 +1,7 @@
 
 
 $(window).scroll(function () {
-  if($(this).scrollTop() > 400){
+  if($(this).scrollTop() > 200){
     if(!$('.navbar').hasClass('navbar-fixed-top')){
         $('.navbar').stop().addClass('navbar-fixed-top').css('top', '-50px').animate({'top': '0px'}, 1500);
         $(".navbar").removeClass("navbar-interp");
@@ -23,7 +23,7 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function(){
-    if($(document).scrollTop()>400){
+    if($(document).scrollTop()>200){
       $(".navbar").addClass("navbar-fixed-top");
       $(".navbar").removeClass("navbar-interp");
       $(".navbar").removeClass("navbar1");
