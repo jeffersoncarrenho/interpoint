@@ -560,6 +560,7 @@ span.tel{
 .page-content{
  top:-65px;
  position: relative;
+ font-size: 1.3em;
 }
 
 .post-img{
@@ -580,6 +581,7 @@ span.tel{
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
   font-weight: 400;
   left: 20px;
+  padding: 10px;
 }
 
 .post-img span{
@@ -733,7 +735,6 @@ span.tel{
 
 .page-content .tab-content{
   margin-top: 15px;
-  font-size: 1.3em;
 }
 
 .page-content .tab-content .table-responsive{
@@ -789,7 +790,7 @@ span.tel{
 .page-form {
     background: #dcdddf;
     font-size: 15px;
-    margin-bottom: 15px;
+    margin: 0 15px;
     padding: 15px 0;
     float: right;
 }
@@ -833,7 +834,22 @@ th{
   border: solid 1px #fff;
 }
 
+.table-responsive{
+  width:100%;
+  padding-top: 15px;
+}
+
 /*TABLES*/
+
+/*FORMS*/
+.formulario{
+  margin-top:75px;
+}
+
+.formulario label{
+  font-size: .8em;
+}
+/*END FORMS*/
 
 
 @media (min-width:991px) and (max-width:1200px) {
@@ -972,3 +988,105 @@ th{
     font-size: 1em;
   }
 }
+
+
+.open-nav {
+    left: 75px;
+    position: fixed;
+    z-index: 10;
+}
+
+.sidenav{background-color:#fff;height:100%;left:0;overflow-x:hidden;padding-top:60px;position:fixed;top:0;transition:.5s;width:0;z-index:11;}
+.sidenavR{background-color:#111;height:100%;overflow-x:hidden;padding-top:60px;position:fixed;right:0;top:0;transition:.5s;width:0;z-index:2;}
+.sidenav a,.sidenavR a{color:#818181;display:block;font-size:25px;padding:8px 8px 8px 32px;text-decoration:none;transition:.3s;}
+.sidenav a:hover,.offcanvas a:focus,.sidenavR a:hover,.offcanvas a:focus{color:#777;}
+.sidenav .closebtn,.sidenavR .closebtn{font-size:36px;margin-left:50px;position:absolute;right:25px;top:0;}
+
+@media screen and max-height 450px {
+  .sidenav,.sidenavR{padding-top:15px;}
+  .sidenav a,.sidenavR a{font-size:18px;}
+}
+
+/**Sidebar Menu & Main Menu**/
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    background-color: #e7e7e7;
+    color: #333;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+.dropdown-menu > li > a {
+    padding: 5px 20px;
+}
+
+.menu-lateral{
+    padding: 40px 15px;
+}
+
+.menu-lateral ul{
+    padding: 0;
+}
+
+
+.menu-lateral ul.sub-menu li a{
+    padding: 10px 8px 10px 30px;
+}
+
+.menu-lateral ul.sub-menu li ul li a{
+    padding: 10px 45px;
+}
+
+.menu-lateral ul li{
+    list-style: none;
+}
+
+.menu-lateral .sub-menu-link {
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: -1px;
+    position: relative;
+    color: #333;
+    padding:8px;
+}
+
+.menu-lateral .italico{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 8px;
+    position: relative;
+}
+
+.menu-lateral .list-group-item-success {
+    background-color: transparent;
+    color: #333;
+}
+
+.menu-lateral .list-group-item-success:hover,
+.menu-lateral .list-group-item-success:focus{
+    background-color: transparent;
+    color: #333;
+}
+#sidebar .menu li{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#sidebar .menu li ul li{
+    text-transform: none;
+    font-weight: 600;
+}
+
+#sidebar .menu li ul li ul li{
+    text-transform: none;
+    font-weight: 400;
+}
+/**End Sidebar Menu & Main Menu**/

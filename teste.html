@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Interpoint Viagens e Turismo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="assets/components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!--  Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100italic,100,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet">
+    <!--  Font Awesome-->
+    <link href="assets/components/font-awesome/css/font-awesome.min.css"  rel='stylesheet' type='text/css'>
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="assets/components/swiper/dist/css/swiper.min.css">
+
+    <style>
+      .sidenav{background-color:#111;height:100%;left:0;overflow-x:hidden;padding-top:60px;position:fixed;top:0;transition:.5s;width:0;z-index:1;}
+      .sidenavR{background-color:#111;height:100%;overflow-x:hidden;padding-top:60px;position:fixed;right:0;top:0;transition:.5s;width:0;z-index:1;}
+      .sidenav a,.sidenavR a{color:#818181;display:block;font-size:25px;padding:8px 8px 8px 32px;text-decoration:none;transition:.3s;}
+      .sidenav a:hover,.offcanvas a:focus,.sidenavR a:hover,.offcanvas a:focus{color:#f1f1f1;}
+      .sidenav .closebtn,.sidenavR .closebtn{font-size:36px;margin-left:50px;position:absolute;right:25px;top:0;}
+      @media screen and max-height 450px {
+      .sidenav,.sidenavR{padding-top:15px;}
+      .sidenav a,.sidenavR a{font-size:18px;}
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="https://i2.wp.com/interpoint.com.br/wp-content/uploads/2015/09/cropped-interpoint_app_512x512px.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+    <link rel="icon" href="https://i2.wp.com/interpoint.com.br/wp-content/uploads/2015/09/cropped-interpoint_app_512x512px.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="https://i2.wp.com/interpoint.com.br/wp-content/uploads/2015/09/cropped-interpoint_app_512x512px.png?fit=180%2C180&#038;ssl=1" />
+    <meta name="msapplication-TileImage" content="https://i2.wp.com/interpoint.com.br/wp-content/uploads/2015/09/cropped-interpoint_app_512x512px.png?fit=270%2C270&#038;ssl=1" />
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+  </div>
+  <div id="mySidenavR" class="sidenavR">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavR()">×</a>
+      <a href="#">About 2</a>
+      <a href="#">Services 2</a>
+      <a href="#">Clients 2</a>
+      <a href="#">Contact 2</a>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <div class="row">
+                  <div class="col-xs-1">
+                      <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+                  </div>
+                  <div class="col-xs-8 col-xs-offset-1 col-md-10 col-md-offset-0 text-center">
+                      <h1>Sliding Left & Right Menus</h1>
+                  </div>
+                  <div class="col-xs-1">
+                      <span style="font-size:30px;cursor:pointer" onclick="openNavR()">☰</span>
+                  </div>
+              </div>
+              <p>Click the Elements to Open the Side Menus.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- jQuery Version 1.11.1 -->
+  <script src="assets/components/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+  <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openNavR() {
+      document.getElementById("mySidenavR").style.width = "250px";
+    }
+
+    function closeNavR() {
+      document.getElementById("mySidenavR").style.width = "0";
+    }
+  </script>
+
+</body>
+</html>
